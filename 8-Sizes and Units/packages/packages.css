@@ -1,5 +1,5 @@
 main {
-    padding-top: 32px;
+    padding-top: 4rem;
 }
 
 /* Background */
@@ -7,8 +7,8 @@ main {
 .background {
     background: url("../images/plans-background.jpg") center/cover;
     filter: grayscale(40%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: -1;
 }
@@ -16,12 +16,12 @@ main {
 /* ---------------------- */
 
 .packages-section {
-    margin: 16px 0;
+    margin: 1rem 0;
     background-color: rgba(217, 241, 224, 0.9);
     border: 4px solid #0d6e2c;
     border-left: none;
     width: 80%;
-    padding: 20px;
+    padding: 1.25rem;
     position: relative;
 }
 
@@ -40,13 +40,12 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px;
-    font-size: 12px;
+    margin: 1.25rem;
+    font-size: 0.75rem;
     color: white;
     background: #ff5454;
-    padding: 5px;
+    padding: 0.5rem;
     border-radius: 3px;
-    z-index: 10;
 }
 
 .packages__plan-subtitle {
@@ -55,7 +54,7 @@ main {
 
 .packages__plan-description {
     border: 1px solid #0d6e2c;
-    padding: 16px;
+    padding: 1rem;
     background-color: white;
     color: #0d6e2c;
 }

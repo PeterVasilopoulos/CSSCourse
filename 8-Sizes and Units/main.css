@@ -1,7 +1,7 @@
 #product-overview {
     background: 
         linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), 
-        url("images/freedom.jpg") left 10% bottom 20%/cover no-repeat border-box, 
+        url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, 
         #ff1b68;
 
     /* background-image: url("freedom.jpg");
@@ -14,10 +14,9 @@
     /* background-image: linear-gradient(red 70%, rgb(174, 0, 255) 80%, transparent); */
 
     /* background-image: radial-gradient(circle, rgb(70, 70, 70), rgb(43, 43, 43)); */
-    width: 100%;
-    height: 528px;
-    padding: 10px;
-    margin-top: 40px;
+    width: 100vw;
+    height: 33vh;
+    margin-top: 2.5rem;
     position: relative;
 }
 
@@ -46,8 +45,8 @@
 .plan {
     background-color: #d5ffdc;
     text-align: center;
-    padding: 16px;
-    margin: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
     display: inline-block;
     width: 30%;
     vertical-align: middle;
@@ -62,7 +61,7 @@
 .plan__annotation {
     color: #0d6e2c;
     background-color: white;
-    padding: 3px;
+    padding: 0.2rem;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
@@ -90,7 +89,7 @@
 }
 
 .plan__feature {
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 /* --------------------- */
@@ -99,13 +98,13 @@
 
 #key-features {
     background-color: #ff1b68;
-    margin-top: 80px;
-    padding: 16px;
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
 #key-features .section-title {
     color: white;
-    margin: 32px;
+    margin: 2rem;
 }
 
 .key-feature__list {
@@ -117,7 +116,7 @@
 
 .key-feature {
     display: inline-block;
-    padding: 0px 5px;
+    padding: 0px 0.3rem;
     width: 30%;
     vertical-align: top;
 }
@@ -129,12 +128,12 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .key-feature__description {
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
