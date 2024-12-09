@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>uHost</title>
-        <link rel="shortcut icon" href="favicon.png" />
+        <link rel="shortcut icon" href="../favicon.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +23,11 @@
         <!-- Header -->
         <header class="main-header">
             <div>
+                <button class="toggle-button">
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                </button>
                 <a href="../index.html" class="main-header__brand">
                     <img src="../images/uhost-icon.png" alt="uHost - Your favorite hosting company">
                 </a>
@@ -41,6 +46,21 @@
                 </ul>
             </nav>
         </header>
+
+        <!-- Side Nav Menu -->
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                    <a href="index.html">Packages</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="../customers/index.html">Customers</a>
+                </li>
+                <li class="mobile-nav__item mobile-nav__item--cta">
+                    <a href="../start-hosting/index.html">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- Packages -->
         <main>
@@ -85,5 +105,9 @@
                 </ul>
             </nav>
         </footer>
+
+        <!-- JavaScript -->
+        <script src="../shared.js"></script>
+
     </body>
 </html>

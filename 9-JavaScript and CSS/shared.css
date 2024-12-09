@@ -215,3 +215,12 @@ body {
 .button:focus {
     outline: none;
 }
+
+
+/* -------------------- */
+
+/* Open */
+
+.open {
+    display: block !important;
+}
