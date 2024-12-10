@@ -65,7 +65,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem;
-    height: 1.4rem;
+    height: 2rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -75,7 +75,7 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
@@ -130,7 +130,7 @@ body {
 .main-footer {
     background: black;
     color: white;
-    padding: 2rem;
+    padding: 1.2rem;
     margin-top: 3rem;
 }
 
@@ -142,8 +142,7 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -223,4 +222,28 @@ body {
 
 .open {
     display: block !important;
+}
+
+
+/* -------------------- */
+
+/* Media Queries */
+
+@media (min-width: 40rem) {
+    .main-nav {
+        display: inline-block;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .main-footer {
+        padding: 1.2rem;
+    }
+
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
