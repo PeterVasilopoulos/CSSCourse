@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -19,9 +24,9 @@ body {
     background-color: rgba(0,0,0,0.5);
 }
 
-/* ---------------------- */
+/* ------------------------------------------------------------- */
 
-/* Header */
+/* || Header */
 
 .main-header {
     width: 100%;
@@ -64,8 +69,7 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.4rem;
-    height: 2rem;
+    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -125,9 +129,10 @@ body {
 
 /* --------------------- */
 
-/* Footer */
+/* || Footer */
 
 .main-footer {
+    bottom: 0;
     background: black;
     color: white;
     padding: 1.2rem;
@@ -157,7 +162,7 @@ body {
 
 /* ------------------- */
 
-/* Side Nav */
+/* || Side Nav */
 
 .mobile-nav {
     display: none;
@@ -189,7 +194,7 @@ body {
 
 /* ------------------- */
 
-/* Button */
+/* || Button */
 
 .button {
     background-color: #0d6e2c;
@@ -218,7 +223,7 @@ body {
 
 /* -------------------- */
 
-/* Open */
+/* || Open */
 
 .open {
     display: block !important;
@@ -227,7 +232,7 @@ body {
 
 /* -------------------- */
 
-/* Media Queries */
+/* || Media Queries */
 
 @media (min-width: 40rem) {
     .main-nav {
