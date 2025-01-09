@@ -1,0 +1,38 @@
+.main {
+    margin: 2rem;
+    background-color: rgb(199, 199, 199);
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 50px 200px 50px;
+    grid-template-areas: "header header header header"
+                        "side main main main"
+                        "footer footer footer footer";
+}
+
+.main div {
+    background-color: rgb(105, 105, 105);
+    color: rgb(224, 224, 224);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.header {
+    /* grid-column: 1 / -1; */
+    grid-area: header;
+}
+
+.sidebar {
+    /* grid-column: 1 / span 1; */
+    grid-area: side;
+}
+
+.main-content {
+    /* grid-column: 2 / span 3; */
+    grid-area: main;
+}
+
+.footer {
+    /* grid-column: 1 / -1; */
+    grid-area: footer;
+}
