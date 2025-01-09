@@ -23,6 +23,7 @@ main {
     width: 80%;
     padding: 1.25rem;
     position: relative;
+    overflow: hidden;
 }
 
 .packages-section:hover {
@@ -40,12 +41,16 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 1.25rem;
+    margin: 0;
     font-size: 0.75rem;
     color: white;
     background: #ff5454;
     padding: 0.5rem;
     border-radius: 3px;
+    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
 }
 
 .packages__plan-subtitle {
