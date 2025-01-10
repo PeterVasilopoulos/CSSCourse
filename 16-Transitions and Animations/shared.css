@@ -26,12 +26,14 @@ main {
 .backdrop {
     position: fixed;
     display: none;
+    opacity: 0;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,0.5);
+    transition: opacity 0.2s linear;
 }
 
 /* ------------------------------------------------------------- */
@@ -113,6 +115,10 @@ main {
     border-bottom: 5px solid white;
 }
 
+.main-nav__item__cta {
+    animation: wiggle 0.4s 3s 8 none;
+}
+
 .main-nav__item__cta a,
 .mobile-nav__item--cta a {
     color: white;
@@ -172,7 +178,8 @@ main {
 /* || Side Nav */
 
 .mobile-nav {
-    display: none;
+    /* display: none; */
+    transform: translateX(-100%);
     position: fixed;
     z-index: 101;
     top: 0;
@@ -180,6 +187,7 @@ main {
     background: white;
     width: 80%;
     height: 100vh;
+    transition: transform 0.2s linear;
 }
 
 .mobile-nav__items {
@@ -243,6 +251,8 @@ main {
 
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) translateX(0) !important;
 }
 
 
@@ -270,5 +280,23 @@ main {
 
     .main-footer__link {
         margin: 0 1rem;
+    }
+}
+
+
+/* -------------------- */
+
+/* || Animations */
+
+/* Start Hosting Button Animation */
+@keyframes wiggle {
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
     }
 }
